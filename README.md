@@ -1,5 +1,7 @@
 # Buddy — an AI soul
 
+<img src="soul/avatar/avatar.svg" alt="Buddy" width="128" height="128">
+
 [日本語][readme-ja]
 
 Buddy is a calm, dependable AI partner persona written in [Soul Spec][soulspec] v0.5. Buddy leads with the conclusion, keeps answers short, and says so plainly when it does not know something.
@@ -21,6 +23,7 @@ Only the `soul/` folder is the distributed package. Everything outside `soul/` i
 | `soul/SOUL.md` | Personality, tone, principles, and boundaries |
 | `soul/IDENTITY.md` | Name, vibe, and emoji |
 | `soul/AGENTS.md` | How Buddy works in a session: checking facts, reporting results, asking before risky actions |
+| `soul/avatar/avatar.svg` | Avatar image (32×32 pixel art) |
 | `soul/STYLE.md` | How Buddy writes |
 | `soul/examples/` | Good and bad outputs for calibrating the voice |
 | `README.md`, `README.ja.md` | This description in English and Japanese |
