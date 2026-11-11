@@ -18,8 +18,9 @@ Only the `soul/` folder is the distributed package. Everything outside `soul/` i
 | Path | Contents |
 | --- | --- |
 | `soul/soul.json` | Package metadata (name, version, license, tags) |
-| `soul/SOUL.md` | Values, personality, and boundaries |
+| `soul/SOUL.md` | Personality, tone, principles, and boundaries |
 | `soul/IDENTITY.md` | Name, vibe, and emoji |
+| `soul/AGENTS.md` | How Buddy works in a session: checking facts, reporting results, asking before risky actions |
 | `soul/STYLE.md` | How Buddy writes |
 | `soul/examples/` | Good and bad outputs for calibrating the voice |
 | `README.md`, `README.ja.md` | This description in English and Japanese |
