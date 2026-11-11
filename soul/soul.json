@@ -21,7 +21,8 @@
     "soul": "SOUL.md",
     "identity": "IDENTITY.md",
     "agents": "AGENTS.md",
-    "style": "STYLE.md"
+    "style": "STYLE.md",
+    "avatar": "avatar/avatar.svg"
   },
   "examples": {
     "good": "examples/good-outputs.md",
