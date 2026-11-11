@@ -29,17 +29,23 @@ Only the `soul/` folder is the distributed package. Everything outside `soul/` i
 
 Copy the files in `soul/` into the place your agent reads persona files from. Any agent that reads `SOUL.md` can use Buddy.
 
+## Making changes
+
+This repository uses GitHub Flow.
+
+1. Create a branch from `main`.
+2. Open a pull request. The `ci` check runs the ClawSouls validator and SoulScan on `soul/`.
+3. Merge the pull request after `ci` passes. `main` accepts changes only through pull requests.
+
 ## Publishing
 
-Run the [ClawSouls][clawsouls] CLI against the `soul/` folder, not the repository root.
+Publishing runs in GitHub Actions. Only the `soul/` folder is uploaded to [ClawSouls][clawsouls].
 
-```sh
-npx clawsouls validate ./soul
-npx clawsouls soulscan ./soul
-npx clawsouls publish ./soul
-```
+1. In a pull request, raise `version` in `soul/soul.json` and merge it.
+2. Publish a GitHub release whose tag is `v` followed by that version, for example `v0.2.0`.
+3. The `publish` workflow checks that the tag matches `soul.json`, runs the validator and SoulScan, and publishes the soul.
 
-Raise `version` in `soul/soul.json` before each publish.
+The workflow reads the ClawSouls API token from the `CLAWSOULS_TOKEN` secret of the `clawsouls` environment. Issue the token at <https://clawsouls.ai/dashboard>.
 
 ## License
 
