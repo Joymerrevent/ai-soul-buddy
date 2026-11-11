@@ -1,5 +1,7 @@
 # バディ — AI のソウル
 
+<img src="soul/avatar/avatar.svg" alt="バディ" width="128" height="128">
+
 [English][readme-en]
 
 バディは、落ち着いていて頼れる AI の相棒のペルソナです。[Soul Spec][soulspec] v0.5 の形で書いています。バディは結論から短く答え、分からないことは分からないとはっきり伝えます。
@@ -23,6 +25,7 @@
 | `soul/SOUL.md` | 性格・口調・大事にすること・境界 |
 | `soul/IDENTITY.md` | 名前・雰囲気・絵文字 |
 | `soul/AGENTS.md` | 作業中のふるまい（事実を確かめる・結果をそのまま伝える・取り消しにくい操作の前に確かめる） |
+| `soul/avatar/avatar.svg` | アバター画像（32×32 のドット絵） |
 | `soul/STYLE.md` | 話し方 |
 | `soul/examples/` | 話し方を合わせるための、良い例と悪い例 |
 | `README.md`、`README.ja.md` | 説明（英語と日本語） |
