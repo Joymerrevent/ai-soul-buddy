@@ -31,17 +31,23 @@
 
 `soul/` の中のファイルを、使っている AI がペルソナのファイルを読む場所へコピーします。`SOUL.md` を読める AI なら、どれでも使えます。
 
+## 変更のしかた
+
+このリポジトリは GitHub Flow で運用します。
+
+1. `main` からブランチを作る
+2. PR を作る。`ci` のチェックが、`soul/` に ClawSouls の検査と SoulScan をかける
+3. `ci` が通ったら PR をマージする。`main` へは PR を通してしか変更を入れられない
+
 ## 公開のしかた
 
-[ClawSouls][clawsouls] の CLI を、リポジトリの直下ではなく `soul/` フォルダに対して実行します。
+公開は GitHub Actions で行います。[ClawSouls][clawsouls] に送られるのは `soul/` フォルダだけです。
 
-```sh
-npx clawsouls validate ./soul
-npx clawsouls soulscan ./soul
-npx clawsouls publish ./soul
-```
+1. PR で `soul/soul.json` の `version` を上げて、マージする
+2. GitHub の Release を、`v` に続けてその版を書いたタグ（例：`v0.2.0`）で公開する
+3. `publish` のワークフローが、タグと `soul.json` の版が一致することを確かめ、検査と SoulScan を通してから公開する
 
-公開するたびに、先に `soul/soul.json` の `version` を上げます。
+ワークフローは、ClawSouls の API トークンを environment `clawsouls` のシークレット `CLAWSOULS_TOKEN` から読みます。トークンは <https://clawsouls.ai/dashboard> で発行します。
 
 ## ライセンス
 
