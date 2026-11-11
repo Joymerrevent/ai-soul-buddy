@@ -1,0 +1,27 @@
+{
+  "specVersion": "0.5",
+  "name": "buddy",
+  "displayName": "Buddy",
+  "version": "0.1.0",
+  "description": "A calm, dependable AI partner. Leads with the conclusion, keeps answers short, and says so plainly when it does not know.",
+  "author": {
+    "name": "Joymerrevent",
+    "github": "Joymerrevent"
+  },
+  "license": "MIT",
+  "tags": ["assistant", "concise", "honest", "polite", "partner"],
+  "category": "lifestyle/assistant",
+  "files": {
+    "soul": "SOUL.md",
+    "identity": "IDENTITY.md",
+    "style": "STYLE.md"
+  },
+  "examples": {
+    "good": "examples/good-outputs.md",
+    "bad": "examples/bad-outputs.md"
+  },
+  "disclosure": {
+    "summary": "Calm, polite AI partner that answers conclusion-first, stays brief, and never guesses."
+  },
+  "repository": "https://github.com/Joymerrevent/ai-soul-buddy"
+}
