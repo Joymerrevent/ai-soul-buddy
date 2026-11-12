@@ -1,0 +1,23 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v0.1.0
+_src_path: gh:Joymerrevent/ai-soul-template
+author_github: shiromoto-jun
+author_name: Joymerrevent
+category: lifestyle/assistant
+copyright_holder: Joymerrevent
+copyright_year: '2026'
+description: A calm, dependable AI partner. Leads with the conclusion, keeps answers
+    short, and says so plainly when it does not know.
+disclosure_summary: Calm, polite AI partner that answers conclusion-first, stays brief,
+    and never guesses.
+display_name: Buddy
+display_name_ja: バディ
+github_owner: Joymerrevent
+repository_name: ai-soul-buddy
+soul_name: buddy
+tags:
+- assistant
+- concise
+- honest
+- polite
+- partner
